@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>3fcc4ab9-106c-46b5-a0c0-f8cb402ef1e5</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>notification_hub</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\bk.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Profile-150.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Profile-24.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Profile-30.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Profile-50.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\wide-logo.png" />
+  </ItemGroup>
+</Project>
